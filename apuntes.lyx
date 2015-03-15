@@ -85,7 +85,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -135,6 +135,22 @@ Apuntes de clase
 
 \emph on
 Métodos Matemáticos 2
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\align center
+Eduardo Vázquez Díaz
+\end_layout
+
+\begin_layout Plain Layout
+\paragraph_spacing single
+\align center
+lalohao@gmail.com
 \end_layout
 
 \end_inset
