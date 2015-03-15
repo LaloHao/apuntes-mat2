@@ -85,7 +85,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -409,9 +409,9 @@ Ejemplos de funciones de varias variables
 
 \begin_layout Standard
 Algunas magnitudes físicas:
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 Trabajo realizado por una fuerza 
 \begin_inset Formula $v=f\cdot d$
 \end_inset
