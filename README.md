@@ -4,4 +4,4 @@
 Hecho con
 * LyX (Latex)
 
-[Enlace al pdf](ttps://github.com/LaloHao/apuntes-mat2/apuntes.pdf)
+[Enlace al pdf](https://github.com/LaloHao/apuntes-mat2/apuntes.pdf)
