@@ -1,0 +1,1584 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[usenames]{color}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\noun on
+Universidad de Guadalajara
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+Departamento de Electrónica
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../circuitos/apuntes/fig/UDG.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+Apuntes de clase
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\emph on
+Métodos Matemáticos 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Repaso
+\end_layout
+
+\begin_layout Standard
+Graficar dominio, codominio (rango) de las siguientes funciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+\frac{y^{2}}{4}+\frac{z^{2}}{9}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{z\text{²}}{4}-\frac{y^{2}}{9}-\frac{x\text{²}}{4}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x^{2}}{4}+\frac{y^{2}}{9}-\frac{z^{2}}{16}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z^{2}=\frac{x^{2}}{4}+\frac{y^{2}}{9}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z-y^{2}+x^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $16z+x^{2}+4y^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $36-x^{2}-4y^{2}=9z^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4x^{2}+y^{2}-z^{2}=16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $9z^{2}-4y^{2}-x^{2}=36$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Funciones de varias variables
+\end_layout
+
+\begin_layout Standard
+Una función de 2 variables se escribe como
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=f\left(x,y\right)=x^{2}+xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una función de 3 variables se escribe como
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x,y,z\right)=x+2y-3z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definición de una función de varias variables
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $D$
+\end_inset
+
+ un conjunto de pares ordenados de números reales.
+ Y a cada par ordenado 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ de 
+\begin_inset Formula $D$
+\end_inset
+
+ le corresponde un numero real 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ entonces se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ El conjunto 
+\begin_inset Formula $D$
+\end_inset
+
+ es el dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+ y el correspondiente conjunto de valores de 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ es el rango de 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función de 2 variables independientes 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ el dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+ es una región en el plano 
+\begin_inset Formula $xy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función de 3 variables independientes 
+\begin_inset Formula $x$
+\end_inset
+
+,
+\begin_inset Formula $y$
+\end_inset
+
+ e 
+\begin_inset Formula $z$
+\end_inset
+
+ el dominio es una región en el espacio.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ las variables independientes son 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, y 
+\begin_inset Formula $z$
+\end_inset
+
+ es la variable independiente.
+\end_layout
+
+\begin_layout Subsection
+Ejemplos de funciones de varias variables
+\end_layout
+
+\begin_layout Standard
+Algunas magnitudes físicas:
+\end_layout
+
+\begin_layout Standard
+Trabajo realizado por una fuerza 
+\begin_inset Formula $v=f\cdot d$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Volumen de un cilindro circular recto 
+\begin_inset Formula $v=\pi r^{2}h$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Volumen de un solido rectangular 
+\begin_inset Formula $v=lwh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f\left(x,y\right)=x^{2}y+1$
+\end_inset
+
+ encontrar:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(2,1\right)=\left(2\right)^{2}\left(1\right)+1=4+1=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(1,2\right)=\left(1\right)^{2}\left(2\right)+1=2+1=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(0,0\right)=\left(0\right)^{2}\left(0\right)+1=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(1,-3\right)=\left(1\right)^{2}\left(-3\right)+1=-3+1=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(3a,a\right)=\left(3a\right)^{2}\left(a\right)+1=9a^{2}\cdot a+1=9a^{3}+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(ab,a-b\right)=\left(ab\right)^{2}\left(a-b\right)+1=a^{2}b^{2}\left(a-b\right)+1=a^{3}b^{2}-a^{2}b^{3}+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f\left(x,y\right)=x+\sqrt[3]{xy}$
+\end_inset
+
+ encontrar:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(t,t^{2}\right)=t+\sqrt[3]{t\cdot t^{2}}=t+\sqrt[3]{t^{3}}=t+t=2t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(2y^{2},4y\right)=2y^{2}+\sqrt[3]{2y^{2}4y}=2y^{2}+\sqrt[3]{8y^{3}}=2y^{2}+2y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $g\left(x\right)=xsenx$
+\end_inset
+
+ encontrar:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(\frac{x}{y}\right)=\frac{x}{y}sen\left(\frac{x}{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(xy\right)=xysen\left(xy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x-y\right)=\left(x-y\right)sen\left(x-y\right)=xsen\left(x-y\right)-ysen\left(x-y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Encontrar 
+\begin_inset Formula $F\left(g\left(x\right),h\left(y\right)\right)$
+\end_inset
+
+ si 
+\begin_inset Formula $F\left(x,y\right)=xe^{xy};g\left(x\right)=x^{3};h\left(y\right)=3y+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x^{3},3y+1\right)=x^{3}e^{x^{3}\left(3y+1\right)}=x^{3}e^{3x^{3}y+x^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Encontrar 
+\begin_inset Formula $g\left(u\left(x,y\right),\tau\left(x,y\right)\right)$
+\end_inset
+
+ si 
+\begin_inset Formula $g\left(x,y\right)=ysen\left(x^{2}y\right);u\left(x,y\right)=x^{2}y^{3};\tau\left(x,y\right)=\pi xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x^{2}y^{3},\pi xy\right)=\left(\pi xy\right)sen\left(\left(x^{2}y^{3}\right)^{2}\left(\pi xy\right)\right)=\pi xysen\left(\left(x^{4}y^{6}\right)\left(\pi xy\right)\right)=\pi xysen\left(\pi x^{5}y^{7}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Derivadas parciales
+\end_layout
+
+\begin_layout Standard
+Estudiaremos derivadas relacionadas con funciones de 2 variables.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+, si 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+ se toma como constante al considerar a 
+\begin_inset Formula $x$
+\end_inset
+
+ como variable entonces 
+\begin_inset Formula $f\left(x,y_{0}\right)$
+\end_inset
+
+ solo esta en función de 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si esta función es derivable en 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ entonces el valor de esta derivada se denota por 
+\begin_inset Formula $f_{x}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ y se le llama derivada parcial en 
+\begin_inset Formula $f$
+\end_inset
+
+ con respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para obtener 
+\begin_inset Formula $f_{x}\left(x,y\right)$
+\end_inset
+
+ se deriva 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ con respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+, tratando a 
+\begin_inset Formula $y$
+\end_inset
+
+ como constante.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Para obtener 
+\begin_inset Formula $f_{y}\left(x,y\right)$
+\end_inset
+
+ se deriva 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ con respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+, tratando a 
+\begin_inset Formula $x$
+\end_inset
+
+ como constante.
+\end_layout
+
+\begin_layout Section
+Derivada direccional
+\end_layout
+
+\begin_layout Subsection
+Vectores en el espacio
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $u=\left\langle u_{1},u_{2},u_{3}\right\rangle $
+\end_inset
+
+ y 
+\begin_inset Formula $v=\left\langle v_{1},v_{2},v_{3}\right\rangle $
+\end_inset
+
+ vectores en el espacio y sea 
+\begin_inset Formula $c$
+\end_inset
+
+ un escalar
+\end_layout
+
+\begin_layout Enumerate
+Igualdad de vectores
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $u=v\Leftrightarrow u_{1}=v_{1},u_{2}=v_{2},u_{3}=v_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Longitud
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mbox{\|v\|=\sqrt{v_{1}^{2}+v_{2}^{2}+v_{3}^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vector unitario en dirección 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $u=\frac{1}{\|v\|}\left\langle v_{1},v_{2},v_{3}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Suma de vectores
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $v+u=\left\langle v_{1}+u_{1},v_{2}+u_{2},v_{3}+u_{3}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Producto por un escalar
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $cv=\left\langle cv_{1},cv_{2},cv_{3}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vectores paralelos
+\begin_inset Newline newline
+\end_inset
+
+Dos vectores no nulos 
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ son paralelos si existe algún escalar 
+\begin_inset Formula $c$
+\end_inset
+
+ tal que 
+\begin_inset Formula $u=cv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Producto punto/escalar
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $u\cdot v=u_{1}v_{1}+u_{2}v_{2}+u_{3}v_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Vectores ortogonales
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ son ortogonales si 
+\begin_inset Formula $u\cdot v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Angulo entre vectores
+\begin_inset Newline newline
+\end_inset
+
+El angulo entre 
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ se define como 
+\begin_inset Formula $cos\mbox{\left(\theta\right)=}\frac{u\cdot v}{\|u\|\|v\|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Desigualdad triangular
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\|u+v\|\leq\|u\|+\|v\|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Proyección de 
+\begin_inset Formula $u$
+\end_inset
+
+ sobre 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $proy_{v}u=\frac{u\cdot v}{\|v\|^{2}}v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ejemplo
+\end_layout
+
+\begin_layout Enumerate
+Halla los componentes y la longitud del vector 
+\begin_inset Formula $v$
+\end_inset
+
+ cuyo punto inicial es 
+\begin_inset Formula $\left(-2,3,1\right)$
+\end_inset
+
+ y cuyo punto final es 
+\begin_inset Formula $\left(0,-4,4\right)$
+\end_inset
+
+, al igual que el vector unitario.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\bar under
+Componentes
+\bar default
+ 
+\begin_inset Formula $v=\left\langle 0-\left(-2\right),-4-3,4-1\right\rangle =\left\langle 2,-7,3\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+Longitud
+\bar default
+ 
+\begin_inset Formula $\|v\|=\sqrt{2^{2}+7^{2}+3^{2}}=\sqrt{4+49+9}=\sqrt{62}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+Vector unitario
+\bar default
+ 
+\begin_inset Formula $u=\frac{1}{\sqrt{62}}\left\langle 2,-7,3\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dados 
+\begin_inset Formula $u=\left\langle 3,-1,2\right\rangle ,v=\left\langle -4,0,2\right\rangle ,w=\left\langle 1,-1,2\right\rangle ,z=\left\langle 2,0,-1\right\rangle $
+\end_inset
+
+ encontrar el angulo entre
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\|u\|=\sqrt{14},\|v\|=\sqrt{20}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $cos\left(\theta\right)=\frac{\left\langle 3,-1,2\right\rangle \cdot\left\langle -4,0,2\right\rangle }{\sqrt{14}\sqrt{20}}=\frac{-2+4}{2\sqrt{5}\sqrt{14}}=\frac{-8}{2\sqrt{5}\sqrt{14}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Por lo tanto 
+\begin_inset Formula $\theta=cos^{-1}\left(\frac{-8}{2\sqrt{5}\sqrt{14}}\right)=118.56\text{°}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $w$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\|u\|=\sqrt{14},\|w\|=\sqrt{6}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $cos\left(\theta\right)=\frac{\left\langle 3,-1,2\right\rangle \cdot\left\langle 1,-1,2\right\rangle }{\sqrt{14}\sqrt{6}}=\frac{3+1+4}{\sqrt{84}}=\frac{8}{\sqrt{84}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\theta=29.2$
+\end_inset
+
+°
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v$
+\end_inset
+
+ y 
+\begin_inset Formula $z$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\|v\|=\sqrt{20},\|z\|=\sqrt{5}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $cos\left(\theta\right)=\frac{\left\langle -4,0,2\right\rangle \cdot\left\langle 2,0,-1\right\rangle }{\sqrt{20}\sqrt{5}}=\frac{-8-2}{\sqrt{100}}=\frac{-10}{10}=-1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\theta=180$
+\end_inset
+
+°
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Encontrar la proyección de 
+\begin_inset Formula $u$
+\end_inset
+
+ sobre 
+\begin_inset Formula $v$
+\end_inset
+
+ si 
+\begin_inset Formula $u=3i-5j+2k$
+\end_inset
+
+ y 
+\begin_inset Formula $v=7i+j-2k$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\|v\|=\sqrt{49+1+4}=\sqrt{54}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $proy_{v}u=\frac{\left\langle 3,-5,2\right\rangle \cdot\left\langle 7,1,-2\right\rangle }{54}\left\langle 7,1,-2\right\rangle =\frac{21-5-4}{54}\left\langle 7,1,-2\right\rangle =\frac{12}{54}\left\langle 7,1,-2\right\rangle =\frac{2}{9}\left\langle 7,1,-2\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Derivadas direccionales y gradientes
+\end_layout
+
+\begin_layout Standard
+Para determinar la pendiente de una superficie en un punto dado definimos
+ un nuevo tipo de derivada llamada derivada direccional.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ una superficie y 
+\begin_inset Formula $P=\left(x_{0},y_{0}\right)$
+\end_inset
+
+ un punto en el dominio de 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Derivadas direccionales
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Especificamos una dirección mediante un vector unitario 
+\begin_inset Formula $u=cos\theta i+sen\theta j$
+\end_inset
+
+ donde 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es el angulo que forma el vector con el eje 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo.
+ Para hallar la pendiente deseada reducimos a dos dimensiones mediante la
+ intersección de la superficie con un plano vertical por el punto 
+\begin_inset Formula $P$
+\end_inset
+
+ y es paralelo a 
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/1.jpg
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace*{\fill}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Este plano vertical corta a la superficie para formar la curva 
+\begin_inset Formula $c$
+\end_inset
+
+ y definimos la pendiente de la superficie en 
+\begin_inset Formula $\left(x_{0},y_{0},f\left(x_{0},y_{0}\right)\right)$
+\end_inset
+
+ como la pendiente de la curva en ese punto.
+ La pendiente de la curva 
+\begin_inset Formula $c$
+\end_inset
+
+ se escribe como un limite de calculo de una variable.
+ El plano vertical empleado para formar 
+\begin_inset Formula $c$
+\end_inset
+
+ corta al plano 
+\begin_inset Formula $xy$
+\end_inset
+
+ en una recta 
+\begin_inset Formula $L$
+\end_inset
+
+ que se representa por las ecuaciones parametricas 
+\begin_inset Formula $x=x_{0}+tcos\theta;y=y_{0}+tsen\theta;\forall t$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $Q\left(x,y\right)\in$
+\end_inset
+
+a la recta 
+\begin_inset Formula $L$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/2.jpg
+	lyxscale 50
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los puntos dados se representan como 
+\begin_inset Formula $P=\left(x_{0},y_{0},f\left(x_{0},y_{0}\right)\right);Q=\left(x,y,f\left(x,y\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La distancia 
+\begin_inset Formula $P$
+\end_inset
+
+ y 
+\begin_inset Formula $Q$
+\end_inset
+
+ es
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sqrt{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}}=\sqrt{\left(tcos\theta\right)^{2}+\left(tsen\theta\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al escribir la pendiente de la recta secante que pasa por 
+\begin_inset Formula $P$
+\end_inset
+
+ y 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{f\left(x,y\right)-f\left(x_{0},y_{0}\right)}{t}=\frac{f\left(x_{0}+tcos\theta,y_{0}+sen\theta\right)-f\left(x_{0},y_{0}\right)}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Derivada direccional de 
+\begin_inset Formula $f$
+\end_inset
+
+ en la dirección de 
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La derivada direccional de 
+\begin_inset Formula $f$
+\end_inset
+
+ en dirección 
+\begin_inset Formula $u$
+\end_inset
+
+ se escribe:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{u}f\left(x,y\right)=\lim_{t\rightarrow0}\frac{f\left(x_{0}+tcos\theta,y_{0}+sen\theta\right)-f\left(x_{0},y_{0}\right)}{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función diferenciable en 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, entonces la derivada direccional de 
+\begin_inset Formula $f$
+\end_inset
+
+ en la dirección del vector unitario 
+\begin_inset Formula $u=cos\theta i+sen\theta j$
+\end_inset
+
+ es
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{u}f\left(x,y\right)=f_{x}\left(x,y\right)cos\theta+f_{y}\left(x,y\right)sen\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ejemplo
+\end_layout
+
+\begin_layout Enumerate
+Calcule la derivada direccional de 
+\begin_inset Formula $f\left(x,y\right)=4-x^{2}-\frac{1}{4}y^{2}$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ en la dirección de 
+\begin_inset Formula $u=cos\left(\frac{\pi}{3}\right)i+sen\left(\frac{\pi}{3}\right)j$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}=-2x$
+\end_inset
+
+, 
+\begin_inset Formula $f_{x}\left(1,2\right)=-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}=-\frac{1}{2}y$
+\end_inset
+
+, 
+\begin_inset Formula $f_{y}\left(1,2\right)=-1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $D_{u}f\left(1,2\right)=-2cos\frac{\pi}{3}-sen\frac{\pi}{3}=\frac{-2+\sqrt{3}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Encontrar la derivada direccional de 
+\begin_inset Formula $e^{xy}$
+\end_inset
+
+ en 
+\begin_inset Formula $\left(-2,0\right)$
+\end_inset
+
+ en la dirección del vector unitario 
+\begin_inset Formula $u$
+\end_inset
+
+ que forma un angulo de 
+\begin_inset Formula $\frac{\text{\pi}}{3}$
+\end_inset
+
+ con el eje 
+\begin_inset Formula $x$
+\end_inset
+
+ positivo.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}=ye^{xy}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{x}\left(-2,0\right)=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}=xe^{xy}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{y}\left(-2,0\right)=-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $D_{u}f\left(-2,0\right)=-2sen\frac{\pi}{3}=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Encontrar la derivada direccional de 
+\begin_inset Formula $f\left(x,y\right)=3x^{2}y$
+\end_inset
+
+ en el punto 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ en la dirección del vector 
+\begin_inset Formula $a=3i+4j$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $u=\frac{1}{\sqrt{25}}\left\langle 3,4\right\rangle =\left\langle \frac{3}{5},\frac{4}{5}\right\rangle $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}=6xy$
+\end_inset
+
+, 
+\begin_inset Formula $f_{x}\left(1,2\right)=6\left(1\right)\left(2\right)=12$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}=3x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{y}\left(1,2\right)=3\left(1\right)^{2}=3$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $D_{u}f\left(1,2\right)=12\left(\frac{3}{5}\right)+3\frac{4}{5}=\frac{36+12}{5}=\frac{48}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
