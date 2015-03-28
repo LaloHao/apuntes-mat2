@@ -5,6 +5,7 @@
 \textclass article
 \begin_preamble
 \usepackage[usenames]{color}
+\usepackage{amsfonts}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -27,6 +28,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing single
 \use_hyperref false
@@ -138,6 +140,10 @@ Métodos Matemáticos 2
 \begin_inset Newline newline
 \end_inset
 
+(con Maxima)
+\begin_inset Newline newline
+\end_inset
+
 
 \end_layout
 
@@ -186,7 +192,7 @@ Repaso
 \end_layout
 
 \begin_layout Standard
-Graficar dominio, codominio (rango) de las siguientes funciones
+Graficar, obtener el dominio y codominio (rango) de las siguientes funciones:
 \end_layout
 
 \begin_layout Enumerate
@@ -257,6 +263,3609 @@ Graficar dominio, codominio (rango) de las siguientes funciones
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Solución
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{2}+\frac{y^{2}}{4}+\frac{z^{2}}{9}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Despejamos 
+\begin_inset Formula $z$
+\end_inset
+
+ y graficamos con intervalos definidos, en este caso 
+\begin_inset Formula $\{x:(-5,5);y:(-5,5)$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i0) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([(x^2)+((y^2)/4)+((z^2)/9)=1], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o0) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{3
+\backslash
+,
+\backslash
+sqrt{-{y}^{2}-4
+\backslash
+,{x}^{2}+4}}{2},z=
+\backslash
+frac{3
+\backslash
+,
+\backslash
+sqrt{-{y}^{2}-4
+\backslash
+,{x}^{2}+4}}{2}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d((3*sqrt(-y^2-4*x^2+4))/2, [x,-5,5], [y,-5,5])
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_1.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{z\text{²}}{4}-\frac{y^{2}}{9}-\frac{x\text{²}}{4}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([((z^2)/4)-((y^2)/9)-((x^4)/4)=1], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o2) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+9
+\backslash
+,{x}^{4}+36}}{3},z=
+\backslash
+frac{
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+9
+\backslash
+,{x}^{4}+36}}{3}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i3) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(sqrt(4*y^2+9*x^4+36)/3, [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{x^{2}}{4}+\frac{y^{2}}{9}-\frac{z^{2}}{16}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i4) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([((x^2)/4)+((y^2)/9)-((z^2)/16)=1], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o4) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{2
+\backslash
+,
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+9
+\backslash
+,{x}^{2}-36}}{3},z=
+\backslash
+frac{2
+\backslash
+,
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+9
+\backslash
+,{x}^{2}-36}}{3}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i5) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d((2*sqrt(4*y^2+9*x^2-36))/3, [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang spanish
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i6) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d((x^2)+(y^2), [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z^{2}=\frac{x^{2}}{4}+\frac{y^{2}}{9}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i7) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([z^2=((x^2)/4)+((y^2)/9)], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o7) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+9
+\backslash
+,{x}^{2}}}{6},z=
+\backslash
+frac{
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+9
+\backslash
+,{x}^{2}}}{6}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i8) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(sqrt(4*y^2+9*x^2)/6, [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_5.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z-y^{2}+x^{2}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i9) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([z-y^2+x^2=0], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o9) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z={y}^{2}-{x}^{2}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i10) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(y^2-x^2, [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_6.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $16z+x^{2}+4y^{2}=0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i11) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([16*z+x^2+4*y^2=0], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o11) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{4
+\backslash
+,{y}^{2}+{x}^{2}}{16}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i12) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(-(4*y^2+x^2)/16, [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_7.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $36-x^{2}-4y^{2}=9z^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i13) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([36-x^2-4*y^2=9*z^2], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o13) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{
+\backslash
+sqrt{-4
+\backslash
+,{y}^{2}-{x}^{2}+36}}{3},z=
+\backslash
+frac{
+\backslash
+sqrt{-4
+\backslash
+,{y}^{2}-{x}^{2}+36}}{3}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i14) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(sqrt(-4*y^2-x^2+36)/3, [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_8.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $4x^{2}+y^{2}-z^{2}=16$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i15) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([4*x^2+y^2-z^2=16], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o15) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+sqrt{{y}^{2}+4
+\backslash
+,{x}^{2}-16},z=
+\backslash
+sqrt{{y}^{2}+4
+\backslash
+,{x}^{2}-16}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i16) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(sqrt(y^2+4*x^2-16), [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_9.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $9z^{2}-4y^{2}-x^{2}=36$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i17) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+solve([9*z^2-4*y^2-x^2=36], [z]);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o17) }
+\end_layout
+
+\begin_layout Plain Layout
+
+[z=-
+\backslash
+frac{
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+{x}^{2}+36}}{3},z=
+\backslash
+frac{
+\backslash
+sqrt{4
+\backslash
+,{y}^{2}+{x}^{2}+36}}{3}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i18) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+wxplot3d(sqrt(y^2+4*x^2-16), [x,-5,5], [y,-5,5])$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/repaso_10.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -294,7 +3903,11 @@ Sea
 \begin_inset Formula $D$
 \end_inset
 
- un conjunto de pares ordenados de números reales.
+ un conjunto de pares ordenados de números reales en 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
  Y a cada par ordenado 
 \begin_inset Formula $\left(x,y\right)$
 \end_inset
@@ -436,7 +4049,11 @@ Volumen de un solido rectangular
 \end_layout
 
 \begin_layout Subsection
-Ejercicios
+Ejemplo
+\end_layout
+
+\begin_layout Subsubsection
+Evaluación de funciones
 \end_layout
 
 \begin_layout Standard
@@ -444,11 +4061,210 @@ Sea
 \begin_inset Formula $f\left(x,y\right)=x^{2}y+1$
 \end_inset
 
- encontrar:
+ encontrar (evaluar):
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $f\left(2,1\right)=\left(2\right)^{2}\left(1\right)+1=4+1=5$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(1, y, subst(2, x, y*x^2+1));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o1) }
+\end_layout
+
+\begin_layout Plain Layout
+
+5
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -459,10 +4275,408 @@ Sea
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(1, x, subst(2, y, y+1));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o2) }
+\end_layout
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $f\left(0,0\right)=\left(0\right)^{2}\left(0\right)+1=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i3) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(0, y, subst(0, x, y*x^2+1));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o3) }
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -473,6 +4687,205 @@ Sea
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i4) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(-3, y, subst(1, x, y*x^2+1));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o4) }
+\end_layout
+
+\begin_layout Plain Layout
+
+-2
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -480,10 +4893,418 @@ Sea
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i5) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(a, y, subst(3*a, x, y*x^2+1));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o5) }
+\end_layout
+
+\begin_layout Plain Layout
+
+9
+\backslash
+,{a}^{3}+1
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $f\left(ab,a-b\right)=\left(ab\right)^{2}\left(a-b\right)+1=a^{2}b^{2}\left(a-b\right)+1=a^{3}b^{2}-a^{2}b^{3}+1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i6) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(a-b, y, subst(a*b, x, y*x^2+1));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o6) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{a}^{2}
+\backslash
+,
+\backslash
+left( a-b
+\backslash
+right) 
+\backslash
+,{b}^{2}+1
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -499,6 +5320,207 @@ Sea
 
 \begin_layout Enumerate
 \begin_inset Formula $f\left(t,t^{2}\right)=t+\sqrt[3]{t\cdot t^{2}}=t+\sqrt[3]{t^{3}}=t+t=2t$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(t^2, y, subst(t, x, x+(x*y)^(1/3)));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o1) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\backslash
+,t
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -524,6 +5546,217 @@ Sea
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(x/y, x, x*sen(x));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o1) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{x
+\backslash
+,
+\backslash
+mathrm{sen}
+\backslash
+left( 
+\backslash
+frac{x}{y}
+\backslash
+right) }{y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -531,10 +5764,432 @@ Sea
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(x*y, x, x*sen(x));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o2) }
+\end_layout
+
+\begin_layout Plain Layout
+
+x
+\backslash
+,y
+\backslash
+,
+\backslash
+mathrm{sen}
+\backslash
+left( x
+\backslash
+,y
+\backslash
+right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $g\left(x-y\right)=\left(x-y\right)sen\left(x-y\right)=xsen\left(x-y\right)-ysen\left(x-y\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i3) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(x-y, x, x*sen(x));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o3) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{sen}
+\backslash
+left( x-y
+\backslash
+right) 
+\backslash
+,
+\backslash
+left( x-y
+\backslash
+right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -560,6 +6215,214 @@ Encontrar
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i5) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(3*y+1, y, subst(x^3, x, x*e^(x*y)));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o5) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{e}^{{x}^{3}
+\backslash
+,
+\backslash
+left( 3
+\backslash
+,y+1
+\backslash
+right) }
+\backslash
+,{x}^{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Encontrar 
 \begin_inset Formula $g\left(u\left(x,y\right),\tau\left(x,y\right)\right)$
 \end_inset
@@ -572,7 +6435,415 @@ Encontrar
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $F\left(x^{2}y^{3},\pi xy\right)=\left(\pi xy\right)sen\left(\left(x^{2}y^{3}\right)^{2}\left(\pi xy\right)\right)=\pi xysen\left(\left(x^{4}y^{6}\right)\left(\pi xy\right)\right)=\pi xysen\left(\pi x^{5}y^{7}\right)$
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i7) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+subst(pi*x*y, y, subst((x^2)*y^3, x, y*sen(y*(x^2))));
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o7) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pi
+\backslash
+,x
+\backslash
+,y
+\backslash
+,
+\backslash
+mathrm{sen}
+\backslash
+left( {
+\backslash
+pi}^{7}
+\backslash
+,{x}^{11}
+\backslash
+,{y}^{7}
+\backslash
+right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diferenciales
+\end_layout
+
+\begin_layout Standard
+Para calculo de una variable se define como diferencial de 
+\begin_inset Formula $y$
+\end_inset
+
+ o 
+\begin_inset Formula $dy=f'\left(x\right)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para funciones de dos variables 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ usamos la terminología 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+ y 
+\begin_inset Formula $\Delta y$
+\end_inset
+
+ a los incrementos de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ respectivamente, el incremento de 
+\begin_inset Formula $z$
+\end_inset
+
+ esta dado por 
+\begin_inset Formula $\Delta z=f\left(x+\Delta x,y+\Delta y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definición
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $z=f\left(x,y\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta y$
+\end_inset
+
+ son incrementos de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ entonces los diferenciales de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dx=\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dy=\Delta y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y la diferencial total de la variable dependiente 
+\begin_inset Formula $z$
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy=f_{x}\left(x,y\right)dx+f_{y}\left(x,y\right)dy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $w=f\left(x,y,z,u\right)$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dx=\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dy=\Delta y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dz=\Delta z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $du=\Delta u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y el diferencial de 
+\begin_inset Formula $w$
+\end_inset
+
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dw=\frac{\partial w}{\partial x}dx+\frac{\partial w}{\partial y}dy+\frac{\partial w}{\partial z}dz+\frac{\partial w}{\partial u}du$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo
+\end_layout
+
+\begin_layout Standard
+Calcula el diferencial total para 
+\begin_inset Formula $z=xseny-3x^{2}y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mbox{\ensuremath{\frac{\partial z}{\partial x}=2seny-6xy^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial z}{\partial y}=2xcosy-6x^{2}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dz=\left(2seny-6xy^{2}\right)dx+\left(2xcosy-6x^{2}y\right)dy$
 \end_inset
 
 
@@ -676,6 +6947,4412 @@ Para obtener
 \end_inset
 
  como constante.
+\end_layout
+
+\begin_layout Subsection
+Notación para derivada parcial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial$
+\end_inset
+
+ signo de la derivada parcial
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial x}$
+\end_inset
+
+ derivada parcial de 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial y}$
+\end_inset
+
+ derivada parcial de 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial z}$
+\end_inset
+
+ derivada parcial de 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Derivadas parciales en el punto 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial x}|_{x=x_{0},y=y_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial f}{\partial y}|_{x=x_{0},y=y_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo
+\end_layout
+
+\begin_layout Standard
+Hallar las derivadas parciales primeras con respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=2x-3y+5$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(2*x-3*y+5,x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o1) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=-3$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i2) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(2*x-3*y+5,y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o2) }
+\end_layout
+
+\begin_layout Plain Layout
+
+-3
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{2}-3y^{2}+7$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=2x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i3) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(x^2-3*y^2+7,x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o3) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\backslash
+,x
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=-6y$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i4) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(x^2-3*y^2+7,y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o4) }
+\end_layout
+
+\begin_layout Plain Layout
+
+-6
+\backslash
+,y
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=xy$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=y$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i5) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(x*y,x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(x*y,y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o5) }
+\end_layout
+
+\begin_layout Plain Layout
+
+y
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o6) }
+\end_layout
+
+\begin_layout Plain Layout
+
+x
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=\frac{x}{y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=\frac{1}{y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=\frac{-x}{y^{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=x/y;
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o1) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :=
+\backslash
+frac{x}{y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o2) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{1}{y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o3) }
+\end_layout
+
+\begin_layout Plain Layout
+
+-
+\backslash
+frac{x}{{y}^{2}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x\sqrt{y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=\sqrt{y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=\frac{x}{2\sqrt{y}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i22) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=x*sqrt(y);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o22) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :=x
+\backslash
+,
+\backslash
+sqrt{y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o23) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqrt{y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o24) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{x}{2
+\backslash
+,
+\backslash
+sqrt{y}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=y\sqrt{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=\frac{y}{2\sqrt{x}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=\sqrt{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i25) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=y*sqrt(x);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o25) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :=y
+\backslash
+,
+\backslash
+sqrt{x}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o26) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{y}{2
+\backslash
+,
+\backslash
+sqrt{x}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o27) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+sqrt{x}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}-3xy+y^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=2x-3y$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=-3x+2y$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i28) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=x^2-3*x*y+y^2;
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o28) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :={x}^{2}-3
+\backslash
+,x
+\backslash
+,y+{y}^{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o29) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\backslash
+,x-3
+\backslash
+,y
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o30) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\backslash
+,y-3
+\backslash
+,x
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=3x-2y^{4}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=3$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=-8y^{3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i31) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=3*x-2*y^4;
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o31) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :=3
+\backslash
+,x-2
+\backslash
+,{y}^{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o32) }
+\end_layout
+
+\begin_layout Plain Layout
+
+3
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o33) }
+\end_layout
+
+\begin_layout Plain Layout
+
+-8
+\backslash
+,{y}^{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{5}+3x^{3}y^{2}+3xy^{4}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{x}\left(x,y\right)=5x^{4}+9x^{2}y^{2}+3y^{4}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=6x^{3}y+12xy^{3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i34) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=x^5+3*(x^3)*y^2+3*x*y^4;
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o34) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :={x}^{5}+3
+\backslash
+,{x}^{3}
+\backslash
+,{y}^{2}+3
+\backslash
+,x
+\backslash
+,{y}^{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o35) }
+\end_layout
+
+\begin_layout Plain Layout
+
+3
+\backslash
+,{y}^{4}+9
+\backslash
+,{x}^{2}
+\backslash
+,{y}^{2}+5
+\backslash
+,{x}^{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o36) }
+\end_layout
+
+\begin_layout Plain Layout
+
+12
+\backslash
+,x
+\backslash
+,{y}^{3}+6
+\backslash
+,{x}^{3}
+\backslash
+,y
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=xe^{3y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=e^{3y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=3xe^{3y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i37) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=x*e^(3*y);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o37) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :=x
+\backslash
+,{e}^{3
+\backslash
+,y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o38) }
+\end_layout
+
+\begin_layout Plain Layout
+
+{e}^{3
+\backslash
+,y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o39) }
+\end_layout
+
+\begin_layout Plain Layout
+
+3
+\backslash
+,{e}^{3
+\backslash
+,y}
+\backslash
+,
+\backslash
+mathrm{log}
+\backslash
+left( e
+\backslash
+right) 
+\backslash
+,x
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=yln\left(x\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=\frac{y}{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=ln\left(x\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i43) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=y*log(x);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o43) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :=y
+\backslash
+,
+\backslash
+mathrm{log}
+\backslash
+left( x
+\backslash
+right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o44) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{y}{x}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o45) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{log}
+\backslash
+left( x
+\backslash
+right) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}e^{2y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial z}=2xe^{2y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=2x^{2}e^{2y}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i46) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+f(x,y):=(x^2)*e^(2*y);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+diff(f(x,y),y,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o46) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+mathrm{f}
+\backslash
+left( x,y
+\backslash
+right) :={x}^{2}
+\backslash
+,{e}^{2
+\backslash
+,y}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o47) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\backslash
+,{e}^{2
+\backslash
+,y}
+\backslash
+,x
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{8ex}{
+\backslash
+color{labelcolor}(
+\backslash
+%o48) }
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\backslash
+,{e}^{2
+\backslash
+,y}
+\backslash
+,
+\backslash
+mathrm{log}
+\backslash
+left( e
+\backslash
+right) 
+\backslash
+,{x}^{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Regla de la cadena para funciones de varias variables
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $w=f\left(x,y\right)$
+\end_inset
+
+ donde 
+\begin_inset Formula $f$
+\end_inset
+
+ es una función diferenciable de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $x=g\left(t\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $y=h\left(t\right)$
+\end_inset
+
+ siendo 
+\begin_inset Formula $g$
+\end_inset
+
+ y 
+\begin_inset Formula $h$
+\end_inset
+
+ funciones diferenciables en 
+\begin_inset Formula $t$
+\end_inset
+
+ entonces 
+\begin_inset Formula $w$
+\end_inset
+
+ es una función diferenciable en 
+\begin_inset Formula $t$
+\end_inset
+
+ y se denota:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dw}{dt}=\frac{\partial w}{\partial x}\frac{dx}{dt}+\frac{\partial w}{\partial y}\frac{dy}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $w=x^{2}y-y^{2}$
+\end_inset
+
+ donde 
+\begin_inset Formula $x=sen\left(t\right);y=e^{t}$
+\end_inset
+
+, encontrar 
+\begin_inset Formula $\frac{dw}{dt}$
+\end_inset
+
+ cuando 
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial w}{\partial x}=2xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\partial w}{\partial y}=x^{2}-2y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dx}{dt}=cos\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dy}{dt}=e^{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dw}{dt}=\left(2xy\right)\left(cos\left(t\right)\right)+\left(x^{2}-2y\right)\left(e^{t}\right)|_{x=sen\left(t\right),y=e^{t}|_{t=0}}=2\left(sen\left(t\right)\right)\left(e^{t}\right)\left(cos\left(t\right)\right)+\left(\left(sen\left(t\right)\right)^{2}-2\left(e^{t}\right)\right)\left(e^{t}\right)|_{t=0}=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilice la regla de la cadena para encontrar 
+\begin_inset Formula $\frac{dz}{dt}$
+\end_inset
+
+ o 
+\begin_inset Formula $\frac{dw}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}y+xy^{2};x=2+t^{4};y=1-t^{3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=2xy+y^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=x^{2}+2xy$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dx}{dt}=4t^{3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dy}{dt}=-3t^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dz}{dt}=\left(2xy+y^{2}\right)4t^{3}-3t^{2}\left(x^{2}+2xy\right)|_{x=2+t^{4},y=1-t^{3}}=-24t^{2}+20t^{3}+12t^{5}-42t^{6}+8t^{7}+10t^{9}-11t^{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\sqrt{x^{2}+y^{2}};x=e^{2t};y=e^{-2t}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=\frac{x}{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=\frac{y}{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dx}{dt}=2e^{2t}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dy}{dt}=-2e^{-2t}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dz}{dt}=2e^{2t}\left(\frac{x}{\sqrt{x^{2}+y^{2}}}\right)-2e^{-2t}\left(\frac{y}{\sqrt{x^{2}+y^{2}}}\right)=\frac{2e^{4t}-2e^{-4t}}{\sqrt{e^{4t}+e^{-4t}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=sen\left(x\right)cos\left(y\right);x=\pi t;y=\sqrt{t}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial x}=cosxcosy$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{\partial z}{\partial y}=-senxseny$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dx}{dt}=\pi$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dy}{dt}=\frac{1}{2\sqrt{t}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{dz}{dt}=\pi cosxcosy-\frac{senxseny}{2\sqrt{t}}|_{x=\pi t,y=\sqrt{t}}=\pi cos$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=xln\left(x+2y\right);x=sen\left(t\right);y=cos\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=xe^{y/z};x=t^{2};y=1-t;z=1+2t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=xy+yz^{2};x=e^{t};y=e^{t}sent;z=e^{t}cost$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
