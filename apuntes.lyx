@@ -4082,11 +4082,27 @@ Ejemplo
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Sea 
 \begin_inset Formula $f\left(x,y\right)=x^{2}y+1$
 \end_inset
 
- encontrar (evaluar):
+ evaluar:
 \end_layout
 
 \begin_layout Enumerate
@@ -4183,6 +4199,22 @@ Sea
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Encontrar 
 \begin_inset Formula $F\left(g\left(x\right),h\left(y\right)\right)$
 \end_inset
@@ -4215,7 +4247,7 @@ Sea
 \begin_inset Formula $f\left(x,y\right)=x^{2}y+1$
 \end_inset
 
- encontrar (evaluar):
+ evaluar:
 \end_layout
 
 \begin_layout Enumerate
@@ -23492,7 +23524,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset line
