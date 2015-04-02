@@ -87,7 +87,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -140,7 +140,7 @@ Métodos Matemáticos 2
 \begin_inset Newline newline
 \end_inset
 
-(con Maxima)
+con Maxima.
 \begin_inset Newline newline
 \end_inset
 
@@ -157,6 +157,37 @@ Eduardo Vázquez Díaz
 \paragraph_spacing single
 \align center
 lalohao@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\align center
+
 \end_layout
 
 \end_inset
@@ -1458,12 +1489,9 @@ height "1pt"
 \end_inset
 
 
-
 \begin_inset Newline newline
 \end_inset
 
-
-\lang spanish
 
 \begin_inset ERT
 status open
@@ -4014,14 +4042,14 @@ Si
 \end_inset
 
  es la variable independiente.
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Subsection
-Ejemplos de funciones de varias variables
-\end_layout
 
-\begin_layout Standard
+\series bold
 Algunas magnitudes físicas:
+\series default
+
 \begin_inset Newline newline
 \end_inset
 
@@ -4052,8 +4080,133 @@ Volumen de un solido rectangular
 Ejemplo
 \end_layout
 
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f\left(x,y\right)=x^{2}y+1$
+\end_inset
+
+ encontrar (evaluar):
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(2,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(1,2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(0,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(1,-3\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(3a,a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(ab,a-b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $f\left(x,y\right)=x+\sqrt[3]{xy}$
+\end_inset
+
+ encontrar:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(t,t^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(2y^{2},4y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $g\left(x\right)=xsenx$
+\end_inset
+
+ encontrar:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(\frac{x}{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(xy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x-y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Encontrar 
+\begin_inset Formula $F\left(g\left(x\right),h\left(y\right)\right)$
+\end_inset
+
+ si 
+\begin_inset Formula $F\left(x,y\right)=xe^{xy};g\left(x\right)=x^{3};h\left(y\right)=3y+1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Encontrar 
+\begin_inset Formula $g\left(u\left(x,y\right),\tau\left(x,y\right)\right)$
+\end_inset
+
+ si 
+\begin_inset Formula $g\left(x,y\right)=ysen\left(x^{2}y\right);u\left(x,y\right)=x^{2}y^{3};\tau\left(x,y\right)=\pi xy$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
-Evaluación de funciones
+Solución
 \end_layout
 
 \begin_layout Standard
@@ -6828,22 +6981,290 @@ Calcula el diferencial total para
 
 \end_layout
 
+\begin_layout Subsubsection
+Solución
+\end_layout
+
 \begin_layout Standard
-\begin_inset Formula $\mbox{\ensuremath{\frac{\partial z}{\partial x}=2seny-6xy^{2}}}$
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):=x*sin(y)-3*(x^2)*y^2$
+\end_layout
+
+\begin_layout Plain Layout
+
+zx:diff(z(x,y),x,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zy:diff(z(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z(x,y):",z(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("zx(x,y)=",zx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("zy(x,y)=",zy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dz=(",zx,")dx+(",zy,")dy")$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):x
+\backslash
+,
+\backslash
+mathrm{sin}
+\backslash
+left( y
+\backslash
+right) -3
+\backslash
+,{x}^{2}
+\backslash
+,{y}^{2}
+\backslash
+
+\backslash
+z_{x}(x,y)=
+\backslash
+mathrm{sin}
+\backslash
+left( y
+\backslash
+right) -6
+\backslash
+,x
+\backslash
+,{y}^{2}
+\backslash
+
+\backslash
+z_{y}(x,y)=x
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( y
+\backslash
+right) -6
+\backslash
+,{x}^{2}
+\backslash
+,y
+\backslash
+
+\backslash
+dz=(
+\backslash
+mathrm{sin}
+\backslash
+left( y
+\backslash
+right) -6
+\backslash
+,x
+\backslash
+,{y}^{2})dx+(x
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( y
+\backslash
+right) -6
+\backslash
+,{x}^{2}
+\backslash
+,y)dy
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\frac{\partial z}{\partial y}=2xcosy-6x^{2}y$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $dz=\left(2seny-6xy^{2}\right)dx+\left(2xcosy-6x^{2}y\right)dy$
 \end_inset
 
 
@@ -7002,14 +7423,14 @@ Derivadas parciales en el punto
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{\partial f}{\partial x}|_{x=x_{0},y=y_{0}}$
+\begin_inset Formula $\frac{\partial f}{\partial x}\bigg|_{x=x_{0},y=y_{0}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{\partial f}{\partial y}|_{x=x_{0},y=y_{0}}$
+\begin_inset Formula $\frac{\partial f}{\partial y}\bigg|_{x=x_{0},y=y_{0}}$
 \end_inset
 
 
@@ -7036,11 +7457,107 @@ Hallar las derivadas parciales primeras con respecto a
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{2}-3y^{2}+7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=\frac{x}{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x\sqrt{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=y\sqrt{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}-3xy+y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=3x-2y^{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{5}+3x^{3}y^{2}+3xy^{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=xe^{3y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=yln\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}e^{2y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Solución
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=2x-3y+5$
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
 
 \begin_inset Formula $f_{x}\left(x,y\right)=2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f_{y}\left(x,y\right)=-3$
 \end_inset
 
 
@@ -7226,55 +7743,6 @@ end{math}
 
 
 \begin_inset Newline newline
-\end_inset
-
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $f_{y}\left(x,y\right)=-3$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
 \end_inset
 
 
@@ -7469,6 +7937,14 @@ height "1pt"
 \end_inset
 
 
+\begin_inset Formula $f_{y}\left(x,y\right)=-6y$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -7649,55 +8125,6 @@ end{math}
 
 
 \begin_inset Newline newline
-\end_inset
-
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $f_{y}\left(x,y\right)=-6y$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
 \end_inset
 
 
@@ -10764,7 +11191,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset CommandInset line
@@ -10820,7 +11247,7 @@ begin{verbatim}
 
 \begin_layout Plain Layout
 
-(%i46) 
+(%i207) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10857,17 +11284,32 @@ begin{verbatim}
 
 \begin_layout Plain Layout
 
-f(x,y):=(x^2)*e^(2*y);
+f(x,y):=(x^2)*e^(2*y)$
 \end_layout
 
 \begin_layout Plain Layout
 
-diff(f(x,y),x,1);
+fx:diff(f(x,y),x,1)$
 \end_layout
 
 \begin_layout Plain Layout
 
-diff(f(x,y),y,1);
+fy:diff(f(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("f(x,y):",f(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("fx(x,y)=",fx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("fy(x,y)=",fy)$
 \end_layout
 
 \begin_layout Plain Layout
@@ -10907,118 +11349,29 @@ displaystyle
 
 \begin_layout Plain Layout
 
-
-\backslash
-parbox{8ex}{
-\backslash
-color{labelcolor}(
-\backslash
-%o46) }
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-mathrm{f}
-\backslash
-left( x,y
-\backslash
-right) :={x}^{2}
-\backslash
-,{e}^{2
+f(x,y):{e}^{2
 \backslash
 ,y}
-\end_layout
-
-\begin_layout Plain Layout
-
+\backslash
+,{x}^{2}
+\backslash
 
 \backslash
-end{math}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{math}
-\backslash
-displaystyle
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-parbox{8ex}{
-\backslash
-color{labelcolor}(
-\backslash
-%o47) }
-\end_layout
-
-\begin_layout Plain Layout
-
-2
+fx(x,y)=2
 \backslash
 ,{e}^{2
 \backslash
 ,y}
 \backslash
 ,x
-\end_layout
-
-\begin_layout Plain Layout
-
+\backslash
 
 \backslash
-end{math}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{math}
-\backslash
-displaystyle
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-parbox{8ex}{
-\backslash
-color{labelcolor}(
-\backslash
-%o48) }
-\end_layout
-
-\begin_layout Plain Layout
-
-2
+fy(x,y)=2
 \backslash
 ,{e}^{2
 \backslash
 ,y}
-\backslash
-,
-\backslash
-mathrm{log}
-\backslash
-left( e
-\backslash
-right) 
 \backslash
 ,{x}^{2}
 \end_layout
@@ -11147,6 +11500,84 @@ Sea
 \end_layout
 
 \begin_layout Standard
+Utilice la regla de la cadena para encontrar 
+\begin_inset Formula $\frac{dz}{dt}$
+\end_inset
+
+ o 
+\begin_inset Formula $\frac{dw}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}y+xy^{2};x=2+t^{4};y=1-t^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\sqrt{x^{2}+y^{2}};x=e^{2t};y=e^{-2t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=sen\left(x\right)cos\left(y\right);x=\pi t;y=\sqrt{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=xln\left(x+2y\right);x=sen\left(t\right);y=cos\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=xe^{y/z};x=t^{2};y=1-t;z=1+2t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=xy+yz^{2};x=e^{t};y=e^{t}sent;z=e^{t}cost$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Solución
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $w=x^{2}y-y^{2}$
+\end_inset
+
+ donde 
+\begin_inset Formula $x=sen\left(t\right);y=e^{t}$
+\end_inset
+
+, encontrar 
+\begin_inset Formula $\frac{dw}{dt}$
+\end_inset
+
+ cuando 
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\frac{\partial w}{\partial x}=2xy$
 \end_inset
 
@@ -11176,6 +11607,352 @@ Sea
 
 \begin_layout Standard
 \begin_inset Formula $\frac{dw}{dt}=\left(2xy\right)\left(cos\left(t\right)\right)+\left(x^{2}-2y\right)\left(e^{t}\right)|_{x=sen\left(t\right),y=e^{t}|_{t=0}}=2\left(sen\left(t\right)\right)\left(e^{t}\right)\left(cos\left(t\right)\right)+\left(\left(sen\left(t\right)\right)^{2}-2\left(e^{t}\right)\right)\left(e^{t}\right)|_{t=0}=-2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i65) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):=y*x^2-y^2$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=sin(t)$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=e^t$
+\end_layout
+
+\begin_layout Plain Layout
+
+zx:diff(z(x,y),x,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zy:diff(z(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dx:diff(xx(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dy:diff(yy(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dz:ratsimp(subst(0,t,subst(yy(t),y,subst(xx(t),x,zx*dx+zy*dy))))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("w=",z(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("x=",xx(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("y=",yy(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("w_x=",zx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("w_y=",zy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dx/dt=",dx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dy/dt=",dy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dw/dt=",dz)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+w={x}^{2}
+\backslash
+,y-{y}^{2}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x=
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+y={e}^{t}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+w_x=2
+\backslash
+,x
+\backslash
+,y
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+w_y={x}^{2}-2
+\backslash
+,y
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dx/dt=
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dy/dt={e}^{t} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dw/dt=-2 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -11234,7 +12011,328 @@ Utilice la regla de la cadena para encontrar
 \end_inset
 
 
-\begin_inset Formula $\frac{dz}{dt}=\left(2xy+y^{2}\right)4t^{3}-3t^{2}\left(x^{2}+2xy\right)|_{x=2+t^{4},y=1-t^{3}}=-24t^{2}+20t^{3}+12t^{5}-42t^{6}+8t^{7}+10t^{9}-11t^{10}$
+\begin_inset Formula $\frac{dz}{dt}=\left(2xy+y^{2}\right)4t^{3}-3t^{2}\left(x^{2}+2xy\right)\bigg|_{x=2+t^{4},y=1-t^{3}}=-24t^{2}+20t^{3}+12t^{5}-42t^{6}+8t^{7}+10t^{9}-11t^{10}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):=(x^2)*y+x*(y^2)$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=2+t^4$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=1-t^3$
+\end_layout
+
+\begin_layout Plain Layout
+
+zx:diff(z(x,y),x,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zy:diff(z(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dx:diff(xx(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dy:diff(yy(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dz:ratsimp(subst(yy(t),y,subst(xx(t),x,zx*dx+zy*dy)))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z=",z(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("x=",xx(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("y=",yy(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_x=",zx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_y=",zy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dx/dt=",dx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dy/dt=",dy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dz/dt=",dz)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+z=x
+\backslash
+,{y}^{2}+{x}^{2}
+\backslash
+,y
+\backslash
+
+\backslash
+x={t}^{4}+2
+\backslash
+
+\backslash
+y=1-{t}^{3}
+\backslash
+
+\backslash
+z_x={y}^{2}+2
+\backslash
+,x
+\backslash
+,y
+\backslash
+
+\backslash
+z_y=2
+\backslash
+,x
+\backslash
+,y+{x}^{2}
+\backslash
+
+\backslash
+dx/dt=4
+\backslash
+,{t}^{3}
+\backslash
+
+\backslash
+dy/dt=-3
+\backslash
+,{t}^{2}
+\backslash
+
+\backslash
+dz/dt=-11
+\backslash
+,{t}^{10}+10
+\backslash
+,{t}^{9}+8
+\backslash
+,{t}^{7}-42
+\backslash
+,{t}^{6}+12
+\backslash
+,{t}^{5}+20
+\backslash
+,{t}^{3}-24
+\backslash
+,{t}^{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -11281,7 +12379,369 @@ Utilice la regla de la cadena para encontrar
 \end_inset
 
 
-\begin_inset Formula $\frac{dz}{dt}=2e^{2t}\left(\frac{x}{\sqrt{x^{2}+y^{2}}}\right)-2e^{-2t}\left(\frac{y}{\sqrt{x^{2}+y^{2}}}\right)=\frac{2e^{4t}-2e^{-4t}}{\sqrt{e^{4t}+e^{-4t}}}$
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i49) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):=sqrt(x^2+y^2)$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=e^(2*t)$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=e^(-2*t)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zx:diff(z(x,y),x,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zy:diff(z(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dx:diff(xx(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dy:diff(yy(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dz:ratsimp(subst(yy(t),y,subst(xx(t),x,zx*dx+zy*dy)))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z=",z(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("x=",xx(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("y=",yy(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_x=",zx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_y=",zy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dx/dt=",dx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dy/dt=",dy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dz/dt=",dz)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+z=
+\backslash
+sqrt{{y}^{2}+{x}^{2}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x={e}^{2
+\backslash
+,t}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+y=
+\backslash
+frac{1}{{e}^{2
+\backslash
+,t}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+z_x=
+\backslash
+frac{x}{
+\backslash
+sqrt{{y}^{2}+{x}^{2}}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+z_y=
+\backslash
+frac{y}{
+\backslash
+sqrt{{y}^{2}+{x}^{2}}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dx/dt=2
+\backslash
+,{e}^{2
+\backslash
+,t}
+\backslash
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dy/dt=-
+\backslash
+frac{2}{{e}^{2
+\backslash
+,t}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dz/dt=
+\backslash
+frac{2
+\backslash
+,{e}^{8
+\backslash
+,t} -2}{{e}^{4
+\backslash
+,t}
+\backslash
+,
+\backslash
+sqrt{
+\backslash
+frac{{e}^{8
+\backslash
+,t}+1}{{e}^{4
+\backslash
+,t}}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -11296,7 +12756,419 @@ Utilice la regla de la cadena para encontrar
 \end_inset
 
 
-\begin_inset Formula $\frac{\partial z}{\partial x}=cosxcosy$
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i81) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):=sin(x)*cos(y)$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=pi*t$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=sqrt(t)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zx:diff(z(x,y),x,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zy:diff(z(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dx:diff(xx(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dy:diff(yy(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dz:ratsimp(subst(yy(t),y,subst(xx(t),x,zx*dx+zy*dy)))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z=",z(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("x=",xx(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("y=",yy(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_x=",zx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_y=",zy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dx/dt=",dx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dy/dt=",dy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dz/dt=",dz)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+z=
+\backslash
+mathrm{sin}
+\backslash
+left( x
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( y
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x=
+\backslash
+pi
+\backslash
+,t
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+y=
+\backslash
+sqrt{t}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+z_x=
+\backslash
+mathrm{cos}
+\backslash
+left( x
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( y
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+z_y=-
+\backslash
+mathrm{sin}
+\backslash
+left( x
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{sin}
+\backslash
+left( y
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dx/dt=
+\backslash
+pi
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dy/dt=
+\backslash
+frac{1}{2
+\backslash
+,
+\backslash
+sqrt{t}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dz/dt=
+\backslash
+frac{2
+\backslash
+,
+\backslash
+pi
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( 
+\backslash
+sqrt{t}
+\backslash
+right) 
+\backslash
+,
+\backslash
+sqrt{t}
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( 
+\backslash
+pi
+\backslash
+,t
+\backslash
+right) -
+\backslash
+mathrm{sin}
+\backslash
+left( 
+\backslash
+sqrt{t}
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{sin}
+\backslash
+left( 
+\backslash
+pi
+\backslash
+,t
+\backslash
+right) }{2
+\backslash
+,
+\backslash
+sqrt{t}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -11304,31 +13176,17 @@ Utilice la regla de la cadena para encontrar
 \end_inset
 
 
-\begin_inset Formula $\frac{\partial z}{\partial y}=-senxseny$
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
-\begin_inset Formula $\frac{dx}{dt}=\pi$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\frac{dy}{dt}=\frac{1}{2\sqrt{t}}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $\frac{dz}{dt}=\pi cosxcosy-\frac{senxseny}{2\sqrt{t}}|_{x=\pi t,y=\sqrt{t}}=\pi cos$
 \end_inset
 
 
@@ -11339,6 +13197,470 @@ Utilice la regla de la cadena para encontrar
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i97) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+z(x,y):=x*log(x+2*y)$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=sin(t)$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=cos(t)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zx:diff(z(x,y),x,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+zy:diff(z(x,y),y,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dx:diff(xx(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dy:diff(yy(t),t,1)$
+\end_layout
+
+\begin_layout Plain Layout
+
+dz:ratsimp(subst(yy(t),y,subst(xx(t),x,zx*dx+zy*dy)))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z=",z(x,y))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("x=",xx(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("y=",yy(t))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_x=",zx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("z_y=",zy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dx/dt=",dx)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dy/dt=",dy)$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dz/dt=",dz)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+z=x
+\backslash
+,
+\backslash
+mathrm{log}
+\backslash
+left( 2
+\backslash
+,y+x
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+x=
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+y=
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+z_x=
+\backslash
+mathrm{log}
+\backslash
+left( 2
+\backslash
+,y+x
+\backslash
+right) +
+\backslash
+frac{x}{2
+\backslash
+,y+x}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+z_y=
+\backslash
+frac{2
+\backslash
+,x}{2
+\backslash
+,y+x}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dx/dt=
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dy/dt=-
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+dz/dt=
+\backslash
+frac{
+\backslash
+left( 
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) +2
+\backslash
+,{
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) }^{2}
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{log}
+\backslash
+left( 
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) +2
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+right) -2
+\backslash
+,{
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) }^{2}+
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) 
+\backslash
+,
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) }{
+\backslash
+mathrm{sin}
+\backslash
+left( t
+\backslash
+right) +2
+\backslash
+,
+\backslash
+mathrm{cos}
+\backslash
+left( t
+\backslash
+right) }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -11346,10 +13668,853 @@ Utilice la regla de la cadena para encontrar
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i479) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+w(x,y,z):=x*e^(y/z)$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=t^2$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=1-t$
+\end_layout
+
+\begin_layout Plain Layout
+
+zz(t):=1+2*t$
+\end_layout
+
+\begin_layout Plain Layout
+
+W:jacobian([w(x,y,z)], [x,y,z])$
+\end_layout
+
+\begin_layout Plain Layout
+
+T:jacobian([xx(t),yy(t),zz(t)], [t])$
+\end_layout
+
+\begin_layout Plain Layout
+
+dw:ratsimp(subst(zz(t),z,subst(yy(t),y,subst(xx(t),x,W.T))))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dw/dt=",dw)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+dw/dt=
+\backslash
+frac{8
+\backslash
+,{e}^{
+\backslash
+frac{1}{2
+\backslash
+,t+1}}
+\backslash
+,{t}^{3}+5
+\backslash
+,{e}^{
+\backslash
+frac{1}{2
+\backslash
+,t+1}}
+\backslash
+,{t}^{2}+2
+\backslash
+,{e}^{
+\backslash
+frac{1}{2
+\backslash
+,t+1}}
+\backslash
+,t}{4
+\backslash
+,{e}^{
+\backslash
+frac{t}{2
+\backslash
+,t+1}}
+\backslash
+,{t}^{2}+4
+\backslash
+,{e}^{
+\backslash
+frac{t}{2
+\backslash
+,t+1}}
+\backslash
+,t+{e}^{
+\backslash
+frac{t}{2
+\backslash
+,t+1}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 \begin_inset Formula $w=xy+yz^{2};x=e^{t};y=e^{t}sent;z=e^{t}cost$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% INPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{8ex}{
+\backslash
+color{red}
+\backslash
+bf
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+(%i503) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[t]{
+\backslash
+textwidth}{
+\backslash
+color{blue}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+w(x,y,z):=x+y+yz^2$
+\end_layout
+
+\begin_layout Plain Layout
+
+xx(t):=e^t$
+\end_layout
+
+\begin_layout Plain Layout
+
+yy(t):=e^t$
+\end_layout
+
+\begin_layout Plain Layout
+
+zz(t):=cos(t)*e^t$
+\end_layout
+
+\begin_layout Plain Layout
+
+W:jacobian([w(x,y,z)], [x,y,z])$
+\end_layout
+
+\begin_layout Plain Layout
+
+T:jacobian([xx(t),yy(t),zz(t)], [t])$
+\end_layout
+
+\begin_layout Plain Layout
+
+dw:ratsimp(subst(zz(t),z,subst(yy(t),y,subst(xx(t),x,W.T))))$
+\end_layout
+
+\begin_layout Plain Layout
+
+print("dw/dt=",dw)$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% OUTPUT:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{labelcolor}{RGB}{100,0,0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{math}
+\backslash
+displaystyle
+\end_layout
+
+\begin_layout Plain Layout
+
+dw/dt=2
+\backslash
+,{e}^{t} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{math}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Derivadas parciales de orden superior
+\end_layout
+
+\begin_layout Standard
+Las derivadas parciales de segundo orden son derivadas parciales de 
+\begin_inset Formula $f_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $f_{y}$
+\end_inset
+
+.
+ La derivada respecto a 
+\begin_inset Formula $x$
+\end_inset
+
+ de 
+\begin_inset Formula $f_{x}$
+\end_inset
+
+ se denota como 
+\begin_inset Formula $f_{xx}$
+\end_inset
+
+ y la derivada parcial de 
+\begin_inset Formula $f_{y}$
+\end_inset
+
+ con respecto a 
+\begin_inset Formula $y$
+\end_inset
+
+ es 
+\begin_inset Formula $f_{yy}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las derivadas parciales de segundo orden cruzadas o mixtas son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{xy}=\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{yx}=\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La notación de Leibniz para las derivadas parciales de orden superior son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{xx}=\frac{\partial^{2}f}{\partial x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{xy}=\frac{\partial^{2}f}{\partial y\partial x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{yy}=\frac{\partial^{2}f}{\partial y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{yx}=\frac{\partial^{2}f}{\partial x\partial y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo
+\end_layout
+
+\begin_layout Standard
+Calcule las derivadas parciales de segundo orden y las derivadas mixtas
+ de las siguientes funciones:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{3}+y^{2}e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=4x^{2}-8xy^{4}+7y^{5}-3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x+y+xy$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g\left(x,y\right)=sen\left(xy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $h\left(x,y\right)=x^{2}y+cos\left(y\right)+ysen\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=xe^{y}+y+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=ln\left(x+y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=xsin(x^{2}y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calcule las derivadas parciales de segundo orden de las siguientes funciones:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{4}y^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=x^{4}y+\frac{x}{y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v=\pi r^{2}h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\frac{x}{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\frac{x}{x-y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\sqrt{9-x^{2}-y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\frac{x}{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=\left(senx\right)\left(cosy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=sen\left(u^{2}v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=tan\left(\frac{x}{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $s=arctan\left(wz\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=ln\left(x^{2}+y^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=sen\left(4\theta-9\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=e^{\gamma+s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q=\gamma e^{\theta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=e^{xy}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=e^{-\frac{v^{2}}{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=e^{-x^{2}-y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z=e^{\sqrt{x^{2}+y^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=x^{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=y^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=senh\left(x^{2}y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x,y\right)=cosh\left(y-cosx\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=xy^{2}z^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=\frac{x}{y+z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q=\frac{L}{M}e^{-\frac{L}{M}}$
 \end_inset
 
 
